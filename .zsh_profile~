@@ -1,0 +1,26 @@
+export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/opt/X11/bin:/sw/bin
+#export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/opt/X11/bin:/sw/bin:/usr/local/mysql/bin
+
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
+
+##
+# Your previous /Users/taka/.bash_profile file was backed up as /Users/taka/.bash_profile.macports-saved_2013-04-11_at_15:53:35
+##
+
+# MacPorts Installer addition on 2013-04-11_at_15:53:35: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+export _JAVA_OPTIONS=-Dfile.encoding=UTF-8
+export JAVA_HOME='/System/Library/Java/Home/'
+export CATALINA_HOME='/usr/local/Cellar/tomcat/7.0.39/libexec'
+source /Users/taka/.phpbrew/bashrc
+PHPBREW_SET_PROMPT=1
+
+source ~/.bashrc
+export PATH=/usr/local/bin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+JAVA_HOME=/System/Library/java/Home
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME/bin
+export PATH
